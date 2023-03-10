@@ -24,11 +24,11 @@ export default function Example(props) {
         <h1>{props.heading}</h1>
         <textarea className ="form-control" value={text}onChange={onChange} id="mybox" rows="8" aria-label="With textarea"></textarea>
       </div>
-  
-      <div class="btn-group" role="group" aria-label="Basic example">
-       <button type="button" onClick={clickOn} class="btn btn-secondary">Upper Case</button>
-       <button type="button" onClick={clickOff}class="btn btn-secondary">Lower Case</button>
+       <div class="btn-group" role="group" aria-label="Basic example">
+         <button type="button" onClick={clickOn} class="btn btn-primary mx-1">Upper Case</button>
+         <button type="button" onClick={clickOff}class="btn btn-primary mx-1">Lower Case</button>
       </div>
+      
       <div>
         <h3> <b>{text.split(' ').length}</b> Words, <b>{text.length}</b> Characters  and {0.008*text.split(' ').length} Minutes Read </h3>
       </div>
