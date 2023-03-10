@@ -28,7 +28,14 @@ export default function Example(props) {
       <div class="btn-group" role="group" aria-label="Basic example">
        <button type="button" onClick={clickOn} class="btn btn-secondary">Upper Case</button>
        <button type="button" onClick={clickOff}class="btn btn-secondary">Lower Case</button>
-       
+      </div>
+      <div>
+        <h3> <b>{text.split(' ').length}</b> Words, <b>{text.length}</b> Characters  and {0.008*text.split(' ').length} Minutes Read </h3>
+      </div>
+      <br/>
+      <div>
+        <h3>Preview </h3> 
+        <p>{text}</p>
       </div>
   
     </div>
